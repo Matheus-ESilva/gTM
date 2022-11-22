@@ -1,0 +1,631 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+
+    font-size: 1rem;
+    line-height: 1.5;
+    text-align: left;
+}
+
+body {
+    font-family: "Work Sans", sans-serif;
+    background-color: #fff;
+}
+
+header nav {
+    width: 100%;
+    padding: 25px 9.5% 27px 9.5%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header nav .img-content-nav {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 25px;
+}
+
+header nav .img-content-nav h1 {
+    padding-left: 25px;
+    border-left: 2px solid rgb(68, 132, 207);
+    color: #645F88;
+    font-size: 32px;
+    font-weight: 500;
+}
+
+header nav .img-nav {
+    width: 225px;
+    height: 90px;
+}
+
+header .img-nav img {
+    width: 100%;
+    height: 100%;
+}
+
+header .menu-nav ul {
+    list-style: none;
+
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+header .menu-nav ul li {
+    padding-left: 25px;
+    border-left: 2px solid rgb(68, 132, 207);
+}
+
+header .menu-nav ul li:last-child {
+    padding-right: 25px;
+    border-right: 2px solid rgb(68, 132, 207);
+
+}
+
+header .menu-nav a {
+    color: #645F88;
+    font-size: 17px;
+    text-decoration: none;
+
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+header .menu-nav a:hover {
+    color: #dcd9f1;
+}
+
+header #nav-menu-pecas {
+    color: #000;
+}
+
+header #nav-menu-pecas:hover {
+    color: #dcd9f1;
+}
+
+header.header-others-pags .container-header {
+    background-color: rgb(25, 50, 80);
+    margin: 15px 9% 80px 9%;
+    padding-top: 110px;
+    padding-bottom: 110px;
+    border-radius: 20px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+header.header-others-pags .container-header ul {
+    list-style: none;
+
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+header.header-others-pags .container-header li {
+    color: #727272;
+    font-size: 16px;
+}
+
+header.header-others-pags .container-header a {
+    color: #fff;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+header.header-others-pags .container-header h1 {
+    color: #fff;
+    font-size: 40px;
+    font-weight: 500;
+    letter-spacing: 0.08em;
+    text-align: center;
+    text-shadow: 
+        -1px -1px 0px #000, 
+        -1px 1px 0px #000,      
+        1px -1px 0px #000,    
+        1px 0px 0px #000;
+}
+
+main {
+    background-color: #fff;
+    width: 100%;
+}
+
+main .introduction-main-content {
+    background-color: rgb(25, 50, 80);
+    width: 100%;
+    padding: 40px 60px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+}
+
+main .introduction-main-content .img-introduction-main.scanner {
+    width: 45%;
+    height: 285px;
+}
+
+main .introduction-main-content .img-introduction-main.luva {
+    width: 25%;
+    height: 300px;
+}
+
+/* Se eu coloco width: 100% pra esse bloco q abrange a img, ele n ocupa toda a largura da página, n sei pq. Talvez tenha a ver com o display flex e o comportamento de tags filhas. */
+
+main .introduction-main-content .img-introduction-main img {
+    width: 100%;
+    height: 100%;
+}
+
+main .introduction-main-content .txt-introduction-main {
+    width: 55%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+main .txt-introduction-main h1 {
+    color: #fff;
+    font-size: 36px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    text-shadow: 
+        -1px -1px 0px #000, 
+        -1px 1px 0px #000, 
+        1px -1px 0px #000, 
+        1px 0px 0px #000;
+}
+
+main .txt-introduction-main p {
+    color: #fff;
+    font-size: 17.5px;
+    text-align: justify;
+}
+
+main .description-main-content {
+    padding: 50px 100px 80px 100px;
+}
+
+main .number-description-main {
+    background-color: rgb(68, 132, 207);
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+
+    color: #fff;
+    font-size: 40px;
+    font-weight: 700;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main .description-main-content.oq-e .oq-e-content {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+main .title-description-main h1 {
+    color: #2D2B3A;
+    font-size: 42px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+}
+
+main .title-description-main .divider {
+    background-color: #1257ff;
+    width: 32px;
+    height: 3.7px;
+    margin-right: 20px;
+    border-radius: 40px;
+    display: block;
+}
+
+main .txt-description-main {
+    width: 45%;
+}
+
+main .txt-description-main p {
+    color: rgb(74, 74, 85);
+    font-size: 18px;
+    text-align: center;
+    letter-spacing: 1.5px;
+}
+
+main .description-main-content.como-e {
+    background-color: rgb(25, 50, 80);
+}
+
+main .como-e-content .title-description-main {
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+/* Nesse caso, o margin-bottom desse elemento não foi somado ao margin-top do elemento debaixo. Ou seja, eles não se completam. */
+
+main .como-e-content .title-description-main h1 {
+    color: #656565;
+    text-shadow: 
+        -1px -1px 0px #000, 
+        -1px 1px 0px #000, 
+        1px -1px 0px #000, 
+        1px 0px 0px #000;
+}
+
+main .como-e-content .txt-description-main {
+    width: 100%;
+}
+
+main .como-e-content .txt-description-main p {
+    margin-top: 30px;
+    color: #fff;
+}
+
+main .como-e-content .txt-description-main .img-description-como-e {
+    width: 400px;
+    height: 260px;
+    margin: 30px auto 40px auto;
+
+    box-shadow: #000 0px 20px 30px -10px;
+}
+
+main .txt-description-main .img-description-como-e img {
+    width: 100%;
+    height: 100%;
+}
+
+main .como-funciona-content .title-description-main {
+    margin-top: 30px;
+    margin-bottom: 60px;
+}
+
+main .como-funciona-content .txt-description-main {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+main .como-funciona-content .txt-description-main p {
+    width: 45%;
+    text-align: justify;
+}
+
+main .description-main-content.como-funciona {
+    padding: 50px 100px 20px 100px;
+}
+
+main .orçamento-main-content {
+    margin-top: 40px;
+    margin-bottom: 40px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main .orçamento-main-content a {
+    background-color: rgb(63, 111, 167);
+    padding: 12px 24px;
+    border-radius: 5px;
+    box-shadow: 10px 10px 24px 0px rgb(0 0 0 / 75%);
+    color: #fff;
+    font-size: 18px;
+    text-decoration: none;
+    text-align: center;
+    letter-spacing: 2px;
+    transition: 0.2s;
+}
+
+main .orçamento-main-content a:hover {
+    background-color: rgb(34 42 52);
+}
+
+main .alert-lançamento {
+    background-color: #e2e2e2;
+    width: 900px;
+    height: 300px;
+    margin: 0 auto 40px auto;
+    padding: 30px 60px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+main .alert-lançamento h1,
+main .alert-lançamento h2 {
+    color: #2D2B3A;
+    font-size: 42px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    text-align: center;
+}
+
+main .alert-lançamento h2 {
+    color: #656565;
+    font-size: 32px;
+}
+
+footer {
+    width: 100%;
+    padding: 80px 0px 30px 0px;
+}
+
+footer h3 {
+    margin-bottom: 8px;
+
+    color: #000;
+    font-size: 33px;
+    font-weight: 500;
+    text-shadow: 
+        -1px -1px 0px #adadad, 
+        -1px 1px 0px #adadad,      
+        1px -1px 0px #adadad,    
+        1px 1px 0px #adadad;
+}
+
+footer h5 {
+    margin-bottom: 20px;
+    color: rgb(74, 74, 85);
+    font-size: 20px;
+    font-weight: 500;
+}
+
+footer ul {
+    padding: 0;
+    list-style: none;
+}
+
+footer li {
+    margin-bottom: 8px;
+}
+
+footer a {
+    color: #656565;
+    text-decoration: none;
+
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+footer a:hover {
+    color: #000;
+}
+
+footer .lists-container-footer {
+    margin-bottom: 90px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+footer .pcexperience-content-footer {
+    width: 220px;
+}
+
+footer .pcexperience-content-footer p {
+    color: #656565;
+}
+
+footer .pcexperience-content-footer .img-pcexperience-footer {
+    width: 300px;
+    height: 140px;
+    margin: 40px auto 0px auto;
+
+    display: block;
+}
+
+footer .pcexperience-content-footer .img-pcexperience-footer:hover {
+    opacity: 0.6;
+}
+
+footer .img-pcexperience-footer img {
+    width: 100%;
+    height: 100%;
+}
+
+footer .list-company-footer {
+    width: 150px;
+}
+
+footer .list-histories-footer {
+    width: 200px;
+}
+
+footer .extra-content-footer {
+    width: 250px;
+}
+
+footer .extra-content-footer p {
+    color: #898798;
+}
+
+footer .extra-content-footer a {
+    background-color: #1257ff;
+    width: 100%;
+    margin-top: 15px;
+    padding: 8px 24px;
+    border-radius: 5px;
+
+    color: #fff;
+    text-align: center;
+
+    display: inline-block;
+
+    transition: 0.2s;
+}
+
+footer .extra-content-footer a:hover {
+    background-color: #5a5a89;
+}
+
+footer .signs-container-footer {
+    margin: 40px 16% 20px 14%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer .language-content-footer {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+footer .language-content-footer .img-language-footer {
+    width: 30px;
+    height: 30px;
+}
+
+footer .img-language-footer img {
+    width: 100%;
+    height: 100%;
+}
+
+footer .mark-content-footer {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+footer .mark-content-footer .img-mark-footer {
+    width: 16px;
+    height: 16px;
+}
+
+footer .img-mark-footer img {
+    width: 100%;
+    height: 100%;
+}
+
+header nav .menu-sidebar {
+    background-color: #fff;
+    width: 240px;
+    height: 100%;
+    border-left: 1px solid #2F78C6;
+
+    position: fixed; 
+    right: -310px;
+    top: 0;
+
+    z-index: 7;
+    transition: all .5s ease;
+}
+
+header .menu-sidebar h1 {
+    margin-top: -50px;
+    border-bottom: 1px solid #2F78C6;
+
+    color: #645F88;
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 100px;
+    text-align: center;
+
+    user-select: none;
+}
+
+header .menu-sidebar a {
+    width: 100%;
+    height: 65px;
+    padding-left: 30px;
+    border-bottom: 1px solid #2F78C6;
+
+    color: #000;
+    line-height: 65px;
+    text-decoration: none;
+
+    display: flex;
+    align-items: center;
+
+    transition: all .5s ease;
+}
+
+header .menu-sidebar .img-menu-item {
+    width: 20px;
+    height: 20px;
+    margin-right: 16px;
+}
+
+header .menu-sidebar .img-menu-item img {
+    width: 100%;
+    height: 100%;
+}
+
+header .menu-sidebar a span {
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+header .menu-sidebar a.menu-item-activate, 
+header .menu-sidebar a:hover {
+    border-left: 5px solid #2F78C6;
+    box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+}
+
+header .menu-sidebar #cancel-sidebar {
+    width: 30px;
+    height: 30px;
+    margin-top: 20px;
+    margin-left: -50px;
+    border-radius: 5px;
+
+    color: #fff;
+    font-size: 28px;
+    line-height: 45px;
+    text-align: center;
+
+    display: block;
+    cursor: pointer;
+    transition: all .5s ease;
+}
+
+header .menu-sidebar #cancel-sidebar img {
+    width: 100%;
+    height: 100%;
+}
+
+header #btn-sidebar:checked ~ .menu-sidebar {
+    right: 0;
+}
+
+header #btn-sidebar:checked ~ #active-sidebar {
+    display: none;
+}
+
+header #btn-sidebar {
+    display: none;
+}
+
+header #active-sidebar {
+    width: 40px;
+    height: 30px;
+
+    display: none;
+    cursor: pointer;
+    transition: all .5s ease;
+}
+
+header #active-sidebar img {
+    width: 100%;
+    height: 100%;
+}
