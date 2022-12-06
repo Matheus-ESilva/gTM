@@ -101,7 +101,7 @@ header .menu-nav .nav-menu-btn:hover {
 
 header .slider {
     width: 100%;
-    height: 650px;
+    height: 750px;
     overflow: hidden;
 
     box-shadow: 0px 5px 14px 5px rgba(0,0,0,0.76);
@@ -140,7 +140,7 @@ header .slide .content-slide1 {
 header .content-slide1 .logo-gtm-slide1 {
     width: 300px;
     height: 100px;
-    margin-top: 40px;
+    margin-top: 80px;
     margin-bottom: 100px;
 }
 
@@ -269,6 +269,7 @@ header .slides #radio4:checked ~ .first {
 #section-introduction {
     background-color: #fff;
     margin-top: 90px;
+    margin-bottom: 90px;
     padding: 20px 125px;
 
     display: flex;
